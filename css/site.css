@@ -1,0 +1,101 @@
+:root {
+    --pico-font-family: Raleway;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.language-switch {
+    margin-left: 2rem;
+}
+
+.language-switch a {
+    padding: 0.5rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+.content-layout {
+    display: flex;
+    gap: 1rem;
+}
+
+aside {
+    flex: 1;
+    max-width: 20%;
+    font-size: 0.8rem;
+}
+
+aside ul {
+    padding-left: 1rem;
+}
+
+aside ul li {
+    margin-bottom: -0.8rem;
+}
+
+main {
+    flex: 3;
+}
+
+section {
+    max-width: 60%;
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 720px) {
+    section {
+        max-width: 650px;
+    }
+}
+
+footer {
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+#contact li {
+    margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+}
+#contact i {
+    margin-right: 1rem;
+}
+#contact a {
+    text-decoration: none;
+    /*color: black;*/
+    transition: color 0.3s;
+}
+#contact a:hover {
+    color: #555;
+}
